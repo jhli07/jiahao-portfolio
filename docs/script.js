@@ -1,6 +1,9 @@
 // 简历名片网站 - 交互脚本
 
 document.addEventListener('DOMContentLoaded', () => {
+    // 汉堡菜单
+    initMobileMenu();
+
     // 平滑滚动
     initSmoothScroll();
 
@@ -13,6 +16,39 @@ document.addEventListener('DOMContentLoaded', () => {
     // 打字机效果
     initTypewriter();
 });
+
+// 汉堡菜单
+function initMobileMenu() {
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.nav-menu');
+    const links = menu.querySelectorAll('.nav-link');
+
+    if (!toggle || !menu) return;
+
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        menu.classList.toggle('active');
+        document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // 点击链接关闭菜单
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            toggle.classList.remove('active');
+            menu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // 点击外部关闭
+    menu.addEventListener('click', (e) => {
+        if (e.target === menu) {
+            toggle.classList.remove('active');
+            menu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}
 
 // 平滑滚动
 function initSmoothScroll() {
