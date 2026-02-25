@@ -3,67 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>李佳浩 | 个人主页</title>
+    <title>李佳浩 | 探索者 · 创造者 · 开发者</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 背景动画 -->
-    <div class="bg-grid"></div>
-    <div class="bg-glow"></div>
+    <!-- 动态背景 -->
+    <div class="bg-gradient"></div>
+    <div class="bg-mesh"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
 
     <!-- 导航 -->
     <nav class="nav">
-        <div class="nav-brand">LIJIAHAO</div>
-        <button class="nav-toggle" aria-label="菜单">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="nav-links">
-            <a href="#about" class="nav-link">关于</a>
-            <a href="#skills" class="nav-link">技能</a>
-            <a href="#projects" class="nav-link">项目</a>
-            <a href="#contact" class="nav-link">联系</a>
+        <div class="nav-content">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">{</span>Jiahao<span class="logo-bracket">}</span>
+            </a>
+            <button class="nav-toggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">
+                    <span class="nav-link-num">01</span>
+                    <span class="nav-link-text">关于我</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <span class="nav-link-num">02</span>
+                    <span class="nav-link-text">技能栈</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <span class="nav-link-num">03</span>
+                    <span class="nav-link-text">开源项目</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="nav-link-num">04</span>
+                    <span class="nav-link-text">取得联系</span>
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- 移动端菜单 -->
     <div class="nav-menu">
-        <a href="#about" class="nav-link">关于</a>
-        <a href="#skills" class="nav-link">技能</a>
-        <a href="#projects" class="nav-link">项目</a>
-        <a href="#contact" class="nav-link">联系</a>
+        <a href="#about" class="nav-menu-link">关于我</a>
+        <a href="#skills" class="nav-menu-link">技能栈</a>
+        <a href="#projects" class="nav-menu-link">开源项目</a>
+        <a href="#contact" class="nav-menu-link">取得联系</a>
     </div>
 
     <!-- 英雄区域 -->
     <section class="hero">
         <div class="hero-content">
-            <p class="hero-subtitle">你好，我是</p>
-            <h1 class="hero-title">李佳浩</h1>
-            <p class="hero-desc">山东农业大学 · 学生</p>
-            <p class="hero-tagline">网络安全 · 全栈开发 · AI</p>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                山东农业大学 · 在校学生
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">你好，我是</span>
+                <span class="hero-title-main">李佳浩</span>
+            </h1>
+            <p class="hero-subtitle">探索者 · 创造者 · 开发者</p>
+            <p class="hero-desc">
+                一个对技术充满热情的年轻人，<br>
+                致力于在<span class="highlight">网络安全</span>、<span class="highlight">全栈开发</span>与<span class="highlight">AI</span>领域深耕。
+            </p>
             <div class="hero-cta">
-                <a href="#about" class="btn btn-primary">了解更多</a>
-                <a href="mailto:jh_li07@outlook.com" class="btn btn-outline">联系我</a>
+                <a href="#projects" class="btn btn-primary">
+                    <span>查看项目</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">联系我</a>
             </div>
             <div class="hero-social">
-                <a href="https://github.com/jhli07" target="_blank" class="social-link" aria-label="GitHub">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <a href="https://github.com/jhli07" target="_blank" class="social-btn" aria-label="GitHub">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                 </a>
-                <a href="mailto:jh_li07@outlook.com" class="social-link" aria-label="邮箱">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                <a href="mailto:jh_li07@outlook.com" class="social-btn" aria-label="邮箱">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
                 </a>
             </div>
         </div>
         <div class="hero-visual">
             <div class="hero-card">
-                <div class="card-glow"></div>
+                <div class="card-decoration"></div>
                 <div class="card-content">
-                    <span class="card-label">当前身份</span>
-                    <span class="card-value">学生</span>
-                    <span class="card-school">山东农业大学</span>
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-avatar">
+                            <span>J</span>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-name">李佳浩</span>
+                            <span class="card-role">Student @ SDNWU</span>
+                        </div>
+                        <div class="card-tags">
+                            <span class="card-tag">🛡️ Security</span>
+                            <span class="card-tag">💻 Full-Stack</span>
+                            <span class="card-tag">🤖 AI</span>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="hero-float hero-float-1">
+                <span>🔐</span>
+            </div>
+            <div class="hero-float hero-float-2">
+                <span>⚡</span>
             </div>
         </div>
     </section>
@@ -71,27 +125,45 @@
     <!-- 关于 -->
     <section id="about" class="section">
         <div class="section-header">
-            <span class="section-number">01</span>
+            <span class="section-num">/01</span>
             <h2 class="section-title">关于我</h2>
         </div>
-        <div class="about-content">
-            <div class="about-text">
-                <p class="about-lead">我是一名充满热情的 <strong>技术探索者</strong>，致力于在网络安全、全栈开发与 AI 领域深耕。</p>
-                <p>作为山东农业大学的学生，我始终保持对技术的敬畏与热爱。在 GitHub 上，我积极开源项目，探索前沿技术，努力为社区贡献价值。</p>
-                <p>我相信技术的力量可以改变世界，也相信持续学习是成长的唯一捷径。</p>
+        <div class="about-grid">
+            <div class="about-main">
+                <p class="about-lead">
+                    我是一名<span class="highlight-text">技术探索者</span>，相信代码可以改变世界。
+                </p>
+                <p class="about-text">
+                    目前就读于<span class="highlight-text">山东农业大学</span>，主修计算机相关专业。在课余时间，我积极探索技术的边界，从网络安全的攻防博弈，到全栈开发的完整链路，再到 AI 智能体的无限可能，我都保持着强烈的求知欲和行动力。
+                </p>
+                <p class="about-text">
+                    我的 GitHub 上已经托管了多个开源项目，虽然数量不多，但每一个都倾注了我的思考和热情。我相信，<span class="highlight-text">持续学习</span>是成长的唯一捷径，而<span class="highlight-text">开源共享</span>是技术进步的最佳方式。
+                </p>
+                <div class="about-quote">
+                    <blockquote>"技术不是冰冷的代码，而是人类智慧的延伸。"</blockquote>
+                </div>
             </div>
             <div class="about-stats">
-                <div class="stat-item">
-                    <span class="stat-value">3</span>
-                    <span class="stat-label">专注领域</span>
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-data">
+                        <span class="stat-value">3</span>
+                        <span class="stat-label">专注方向</span>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-value">10+</span>
-                    <span class="stat-label">开源项目</span>
+                <div class="stat-card">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-data">
+                        <span class="stat-value">10+</span>
+                        <span class="stat-label">开源项目</span>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-value">∞</span>
-                    <span class="stat-label">学习热情</span>
+                <div class="stat-card">
+                    <div class="stat-icon">💡</div>
+                    <div class="stat-data">
+                        <span class="stat-value">∞</span>
+                        <span class="stat-label">学习热情</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,30 +172,60 @@
     <!-- 技能 -->
     <section id="skills" class="section">
         <div class="section-header">
-            <span class="section-number">02</span>
-            <h2 class="section-title">专业技能</h2>
+            <span class="section-num">/02</span>
+            <h2 class="section-title">技能栈</h2>
         </div>
-        <div class="skills-grid">
+        <div class="skills-container">
             <div class="skill-card">
-                <div class="skill-icon">🛡️</div>
-                <div class="skill-info">
+                <div class="skill-card-header">
+                    <div class="skill-icon-wrap">
+                        <span class="skill-icon">🛡️</span>
+                    </div>
                     <h3 class="skill-title">网络安全</h3>
-                    <p class="skill-desc">渗透测试 · 漏洞分析 · 安全防护</p>
+                </div>
+                <p class="skill-desc">渗透测试 · 漏洞分析 · 安全防护 · 逆向工程</p>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="--progress: 75%"></div>
                 </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon">💻</div>
-                <div class="skill-info">
+                <div class="skill-card-header">
+                    <div class="skill-icon-wrap">
+                        <span class="skill-icon">💻</span>
+                    </div>
                     <h3 class="skill-title">全栈开发</h3>
-                    <p class="skill-desc">前端 · 后端 · 数据库 · 架构设计</p>
+                </div>
+                <p class="skill-desc">前端 · 后端 · 数据库 · 云服务 · DevOps</p>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="--progress: 80%"></div>
                 </div>
             </div>
             <div class="skill-card">
-                <div class="skill-icon">🤖</div>
-                <div class="skill-info">
+                <div class="skill-card-header">
+                    <div class="skill-icon-wrap">
+                        <span class="skill-icon">🤖</span>
+                    </div>
                     <h3 class="skill-title">AI 开发</h3>
-                    <p class="skill-desc">大语言模型 · 智能体 · RAG 技术</p>
                 </div>
+                <p class="skill-desc">大语言模型 · 智能体 · RAG · 向量数据库</p>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="--progress: 70%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tech-stack">
+            <h4 class="tech-stack-title">技术栈</h4>
+            <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Linux</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">AI/LLM</span>
             </div>
         </div>
     </section>
@@ -131,44 +233,65 @@
     <!-- 项目 -->
     <section id="projects" class="section">
         <div class="section-header">
-            <span class="section-number">03</span>
-            <h2 class="section-title">精选项目</h2>
+            <span class="section-num">/03</span>
+            <h2 class="section-title">开源项目</h2>
         </div>
         <div class="projects-grid">
             <a href="https://github.com/jhli07/OpenThought" target="_blank" class="project-card">
-                <div class="project-top">
-                    <span class="project-folder">📁</span>
-                    <svg class="project-link" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <div class="project-card-header">
+                    <div class="project-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
                 </div>
                 <h3 class="project-title">OpenThought</h3>
-                <p class="project-desc">AI 驱动的链式思维工具，用苏格拉底式追问法帮助深度思考</p>
+                <p class="project-desc">AI 驱动的链式思维工具，运用苏格拉底式追问法帮助用户进行深度思考。</p>
+                <div class="project-meta">
+                    <span class="project-lang">
+                        <span class="lang-dot"></span>Python
+                    </span>
+                    <span class="project-stars">⭐ Star</span>
+                </div>
                 <div class="project-tags">
-                    <span class="project-tag">Python</span>
-                    <span class="project-tag">AI</span>
-                    <span class="project-tag">CLI</span>
+                    <span>AI</span>
+                    <span>工具</span>
+                    <span>CLI</span>
                 </div>
             </a>
             <a href="https://github.com/jhli07/Awesome-Trending-Projects" target="_blank" class="project-card">
-                <div class="project-top">
-                    <span class="project-folder">📁</span>
-                    <svg class="project-link" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <div class="project-card-header">
+                    <div class="project-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </div>
                 </div>
-                <h3 class="project-title">Awesome-Trending-Projects</h3>
-                <p class="project-desc">精选各领域热门开源项目汇总，持续更新</p>
+                <h3 class="project-title">Awesome-Trending</h3>
+                <p class="project-desc">精选各领域热门开源项目汇总，持续更新，助你发现优质资源。</p>
+                <div class="project-meta">
+                    <span class="project-lang">
+                        <span class="lang-dot"></span>Markdown
+                    </span>
+                </div>
                 <div class="project-tags">
-                    <span class="project-tag">AI</span>
-                    <span class="project-tag">DevOps</span>
-                    <span class="project-tag">工具</span>
+                    <span>资源</span>
+                    <span>收藏</span>
+                    <span>AI</span>
                 </div>
             </a>
             <div class="project-card coming-soon">
-                <div class="project-top">
-                    <span class="project-folder">🔒</span>
+                <div class="project-card-header">
+                    <div class="project-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
                 </div>
                 <h3 class="project-title">更多项目</h3>
-                <p class="project-desc">持续开发中...</p>
+                <p class="project-desc">正在开发中...</p>
                 <div class="project-tags">
-                    <span class="project-tag">WIP</span>
+                    <span>WIP</span>
                 </div>
             </div>
         </div>
@@ -177,27 +300,43 @@
     <!-- 联系 -->
     <section id="contact" class="section contact-section">
         <div class="section-header">
-            <span class="section-number">04</span>
-            <h2 class="section-title">联系我</h2>
+            <span class="section-num">/04</span>
+            <h2 class="section-title">取得联系</h2>
         </div>
         <div class="contact-content">
-            <p class="contact-text">如果你对我感兴趣，欢迎通过以下方式联系我</p>
-            <div class="contact-links">
-                <a href="mailto:jh_li07@outlook.com" class="contact-link">
-                    <span class="contact-icon">✉️</span>
-                    <span class="contact-value">jh_li07@outlook.com</span>
+            <p class="contact-intro">如果对我感兴趣，欢迎通过以下方式联系我</p>
+            <div class="contact-cards">
+                <a href="mailto:jh_li07@outlook.com" class="contact-card">
+                    <div class="contact-card-icon">✉️</div>
+                    <div class="contact-card-info">
+                        <span class="contact-card-label">邮箱</span>
+                        <span class="contact-card-value">jh_li07@outlook.com</span>
+                    </div>
+                    <div class="contact-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
                 </a>
-                <a href="https://github.com/jhli07" target="_blank" class="contact-link">
-                    <span class="contact-icon">🐙</span>
-                    <span class="contact-value">github.com/jhli07</span>
+                <a href="https://github.com/jhli07" target="_blank" class="contact-card">
+                    <div class="contact-card-icon">🐙</div>
+                    <div class="contact-card-info">
+                        <span class="contact-card-label">GitHub</span>
+                        <span class="contact-card-value">github.com/jhli07</span>
+                    </div>
+                    <div class="contact-card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
                 </a>
             </div>
+            <p class="contact-note">我会尽快回复你的邮件或关注。</p>
         </div>
     </section>
 
     <!-- 页脚 -->
     <footer class="footer">
-        <p>© 2025 李佳浩 · 用 ❤️ 打造</p>
+        <div class="footer-content">
+            <p class="footer-copy">© 2025 李佳浩 · 用 ❤️ 打造</p>
+            <p class="footer-tech">Built with Inter + Noto Serif SC</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
